@@ -136,4 +136,4 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/Users/dsbatista/.local/bin:$PATH"
 
 # have VLC from the command line
-echo "alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'"
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'
