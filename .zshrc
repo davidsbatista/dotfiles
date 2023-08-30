@@ -122,11 +122,18 @@ bindkey '^[[Z' autosuggest-accept  # shift + tab  | autosuggest
 unsetopt inc_append_history
 unsetopt share_history
 
+# python interpreter
 export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
 
-# so that you can run ruby Gems, e.g.: 'jekyll'
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.1.0/bin"
+# Ruby Gems, so that you can run ruby Gems, e.g.: 'jekyll'
+export PATH="$PATH:/opt/homebrew/lib/ruby/gems/3.2.0/bin/"
 
-export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"
+# Ruby interpreter
+export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"
+
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Users/dsbatista/.local/bin:$PATH"
+
+# have VLC from the command line
+echo "alias vlc='/Applications/VLC.app/Contents/MacOS/VLC -I rc'"
